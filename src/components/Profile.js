@@ -8,6 +8,7 @@ import Balanced from './profiles/Balanced.js';
 import ModeratelyConservative from './profiles/ModeratelyConservative.js';
 import Conservative from './profiles/Conservative.js';
 import Calculator from './Calculator.js';
+import MobileGoogleAd from './MobileGoogleAd.js';
 
 export default class Profile extends Component {
   constructor() {
@@ -180,50 +181,51 @@ export default class Profile extends Component {
           transitionAppearTimeout={300}
           transitionEnterTimeout={300}
           transitionLeaveTimeout={300}>
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12">
-              <Welcome />
-              <h3 className="hidden-xs">Find Your ETF Investor Profile</h3>
-              <h3 className="visible-xs text-center">Find Your ETF Investor Profile</h3>
-              <Calculator
-                years={this.state.years}
-                principle={this.state.principle}
-                addition={this.state.addition}
-                interest={this.state.addition}
-                changeYears={this.changeYears}
-                changePrinciple={this.changePrinciple}
-                changeAddition={this.changeAddition}
-                calculate={this.calculate}
-              />
-              <Aggressive
-                showAggressive={this.state.showAggressive}
-                futureValue={this.state.futureValue}
-                principle={this.state.principle}
-              />
-              <ModeratelyAggressive
-                showModAggressive={this.state.showModAggressive}
-                futureValue={this.state.futureValue}
-                principle={this.state.principle}
-              />
-              <Balanced
-                showBalanced={this.state.showBalanced}
-                futureValue={this.state.futureValue}
-                principle={this.state.principle}
-              />
-              <ModeratelyConservative
-                showModConservative={this.state.showModConservative}
-                futureValue={this.state.futureValue}
-                principle={this.state.principle}
-              />
-              <Conservative
-                showConservative={this.state.showConservative}
-                futureValue={this.state.futureValue}
-                principle={this.state.principle}
-              />
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12">
+                <Welcome />
+                <h3 className="hidden-xs">Find Your ETF Investor Profile</h3>
+                <h3 className="visible-xs text-center">Find Your ETF Investor Profile</h3>
+                <Calculator
+                  years={this.state.years}
+                  principle={this.state.principle}
+                  addition={this.state.addition}
+                  interest={this.state.addition}
+                  changeYears={this.changeYears}
+                  changePrinciple={this.changePrinciple}
+                  changeAddition={this.changeAddition}
+                  calculate={this.calculate}
+                />
+                <MobileGoogleAd />
+                <Aggressive
+                  showAggressive={this.state.showAggressive}
+                  futureValue={this.state.futureValue}
+                  principle={this.state.principle}
+                />
+                <ModeratelyAggressive
+                  showModAggressive={this.state.showModAggressive}
+                  futureValue={this.state.futureValue}
+                  principle={this.state.principle}
+                />
+                <Balanced
+                  showBalanced={this.state.showBalanced}
+                  futureValue={this.state.futureValue}
+                  principle={this.state.principle}
+                />
+                <ModeratelyConservative
+                  showModConservative={this.state.showModConservative}
+                  futureValue={this.state.futureValue}
+                  principle={this.state.principle}
+                />
+                <Conservative
+                  showConservative={this.state.showConservative}
+                  futureValue={this.state.futureValue}
+                  principle={this.state.principle}
+                />
+              </div>
             </div>
           </div>
-        </div>
         </CSSTransitionGroup>
       );
     }

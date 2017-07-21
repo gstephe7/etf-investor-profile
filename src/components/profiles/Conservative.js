@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import DesktopAllyAd from '../DesktopAllyAd.js';
+import MobileAllyAd from '../MobileAllyAd.js';
+import AllyTextAd from '../AllyTextAd.js';
+
 import ConChart from '../../img/conChart.png';
 
 import ConAllocation from './allocations/ConAllocation.js';
@@ -24,6 +28,8 @@ export default class Conservative extends Component {
                 <p>Due to your short investing time horizon, your suggested ETF Investor Profile is <em>Conservative</em>. Conservative investors usually have an investing timeframe under 5 years and heavily favor capital preservation over growth. The majority of their portfolio is kept in US Government Treasury ETFs in order to protect against market volatility, but a large-cap stock ETF is included as well to provide some growth and balance to the bonds. The Conservative profile is ideal for investors older than 60 who are saving for retirement, parents who are saving for their child's future in less than 5 years, or for individuals saving for big purchases or events anticipated within 5 years.</p>
               </div>
             </div>
+            <DesktopAllyAd />
+            <MobileAllyAd />
             <div className="row">
               <div className="col-xs-12">
                 <h4>Suggested Portfolio Allocation</h4>
@@ -65,6 +71,7 @@ export default class Conservative extends Component {
                 <h4>Projected Final Value of Portfolio: ${this.props.futureValue}</h4>
               </div>
             </div>
+            <AllyTextAd />
           </div>
         </CSSTransitionGroup>
       );

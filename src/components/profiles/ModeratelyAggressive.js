@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import DesktopAllyAd from '../DesktopAllyAd.js';
+import MobileAllyAd from '../MobileAllyAd.js';
+import AllyTextAd from '../AllyTextAd.js';
+
 import ModAggChart from '../../img/modAggChart.png';
 
 import ModAggAllocation from './allocations/ModAggAllocation.js';
@@ -24,6 +28,8 @@ export default class ModeratelyAggressive extends Component {
                 <p>Due to your long investing time horizon, your suggested ETF Investor Profile is <em>Moderately Aggressive</em>. Moderately aggressive investors have an investing timeframe of 15 to 19 years and pursue growth potential while maintaining a little stability in their portfolio. They seek out opportunities with greater risk/reward, but refrain from investing too much of their portfolio in these high risk/reward investments. A 15 to 19 year timeframe gives this investor some time to recover from a market downturn, but an increase in allocation toward government bonds is needed to provide stablity. The Moderately Aggressive Profile is usually ideal for investors between the ages of 45 and 50 who are saving for retirement, or for parents who are saving for their child's future in 15 to 18 years. </p>
               </div>
             </div>
+            <DesktopAllyAd />
+            <MobileAllyAd />
             <div className="row">
               <div className="col-xs-12">
                 <h4>Suggested Portfolio Allocation</h4>
@@ -65,6 +71,7 @@ export default class ModeratelyAggressive extends Component {
                 <h4>Projected Final Value of Portfolio: ${this.props.futureValue}</h4>
               </div>
             </div>
+            <AllyTextAd />
           </div>
         </CSSTransitionGroup>
       );

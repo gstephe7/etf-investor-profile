@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import DesktopAllyAd from '../DesktopAllyAd.js';
+import MobileAllyAd from '../MobileAllyAd.js';
+import AllyTextAd from '../AllyTextAd.js';
+
 import AggChart from '../../img/aggChart.png';
 
 import AggAllocation from './allocations/AggAllocation.js';
@@ -23,6 +27,8 @@ export default class Aggressive extends Component {
                 <p>Due to your long investing time horizon, your suggested ETF Investor Profile is <em>Aggressive</em>. Aggressive investors have an investing timeframe of over 20 years and pursue maximum portfolio growth potential by investing over 80% of their money in stocks. They can afford to take on more risk because their portfolio has time to recover in the event of a market downturn. The Aggressive Profile is usually ideal for younger investors (under the age of 45) who are saving for retirement. </p>
               </div>
             </div>
+            <DesktopAllyAd />
+            <MobileAllyAd />
             <div className="row">
               <div className="col-xs-12">
                 <h4>Suggested Portfolio Allocation</h4>
@@ -64,6 +70,7 @@ export default class Aggressive extends Component {
                 <h4>Projected Final Value of Portfolio: ${this.props.futureValue}</h4>
               </div>
             </div>
+            <AllyTextAd />
           </div>
         </CSSTransitionGroup>
       );

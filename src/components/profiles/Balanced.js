@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import DesktopAllyAd from '../DesktopAllyAd.js';
+import MobileAllyAd from '../MobileAllyAd.js';
+import AllyTextAd from '../AllyTextAd.js';
+
 import BalChart from '../../img/balChart.png';
 
 import BalAllocation from './allocations/BalAllocation.js';
@@ -24,6 +28,8 @@ export default class Balanced extends Component {
                 <p>Due to your average investing time horizon, your suggested ETF Investor Profile is <em>Balanced</em>. Balanced investors usually have an investing timeframe of 10 to 14 years and pursue a balance of both growth and capital preservation. They do not want to have too much of their portfolio in aggressive positions in case of a market downturn, but a moderate amount of exposure to stocks gives this portfolio plenty of room to grow. The Balanced Profile is ideal for investors between the ages of 50 and 55 who are saving for retirement, or for parents who are saving for their child's future in 10 to 14 years.</p>
               </div>
             </div>
+            <DesktopAllyAd />
+            <MobileAllyAd />
             <div className="row">
               <div className="col-xs-12">
                 <h4>Suggested Portfolio Allocation</h4>
@@ -65,6 +71,7 @@ export default class Balanced extends Component {
                 <h4>Projected Final Value of Portfolio: ${this.props.futureValue}</h4>
               </div>
             </div>
+            <AllyTextAd />
           </div>
         </CSSTransitionGroup>
       );

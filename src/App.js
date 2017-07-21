@@ -13,6 +13,7 @@ import MobileMenu from './components/MobileMenu.js';
 import MobileNavbar from './components/MobileNavbar.js';
 import Privacy from './components/Privacy.js';
 import Profile from './components/Profile.js';
+import VerticalGoogleAd from './components/VerticalGoogleAd.js';
 
 class App extends Component {
   constructor() {
@@ -114,8 +115,9 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-2 hidden-xs">
-
+              <VerticalGoogleAd />
             </div>
+
             <div className="col-sm-8 col-xs-12">
               <Profile
                 showProfile={this.state.showProfile}
@@ -133,6 +135,7 @@ class App extends Component {
                 showPrivacy={this.state.showPrivacy}
               />
             </div>
+
             <div className="col-sm-2 hidden-xs">
 
             </div>

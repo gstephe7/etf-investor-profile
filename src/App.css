@@ -7,6 +7,20 @@ html, body, .container {
   width: 100%;
 }
 
+.vert-ads {
+  overflow: hidden;
+  height: 650px;
+  margin-top: 10px;
+}
+
+.hori-ads{
+  overflow: hidden;
+}
+
+.ally-ad {
+  margin-top: 25px;
+}
+
 .fadeIn-appear {
   opacity: 0;
 }

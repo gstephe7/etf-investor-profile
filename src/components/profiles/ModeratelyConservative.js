@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import DesktopAllyAd from '../DesktopAllyAd.js';
+import MobileAllyAd from '../MobileAllyAd.js';
+import AllyTextAd from '../AllyTextAd.js';
+
 import ModConChart from '../../img/modConChart.png';
 
 import ModConAllocation from './allocations/ModConAllocation.js';
@@ -24,6 +28,8 @@ export default class ModeratelyConservative extends Component {
                 <p>Due to your short investing time horizon, your suggested ETF Investor Profile is <em>Moderately Conservative</em>. Moderately Conservative investors usually have an investing timeframe of 5 to 9 years and slightly favor capital preservation over growth. Half of the portfolio is kept in large-cap stocks in order to provide growth, but stocks are balanced out by government bonds which make up the other half of the portfolio. The Moderately Conservative Profile is ideal for investors between the ages of 55 and 60 who are saving for retirement, parents who are saving for their child's future in 5 to 9 years, or for individuals saving for big purchases or events anticipated in 5 to 9 years.</p>
               </div>
             </div>
+            <DesktopAllyAd />
+            <MobileAllyAd />
             <div className="row">
               <div className="col-xs-12">
                 <h4>Suggested Portfolio Allocation</h4>
@@ -65,6 +71,7 @@ export default class ModeratelyConservative extends Component {
                 <h4>Projected Final Value of Portfolio: ${this.props.futureValue}</h4>
               </div>
             </div>
+            <AllyTextAd />
           </div>
         </CSSTransitionGroup>
       );
