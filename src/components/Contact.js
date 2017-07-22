@@ -15,7 +15,7 @@ export default class Contact extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <h3>Contact</h3>
-                <p>Email: <a href="mailto:contact@spacemonkeyapps.com" target="_blank" rel="noopener noreferrer">contact@spacemonkeyapps.com</a></p>
+                <p>Email: <a href="mailto:spacemonkeyapplications@gmail.com" target="_blank" rel="noopener noreferrer">spacemonkeyapplications@gmail.com</a></p>
               </div>
             </div>
           </div>
