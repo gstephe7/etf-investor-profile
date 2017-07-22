@@ -48,7 +48,7 @@ export default class ModeratelyAggressive extends Component {
                   <li>Ticker Symbol: VBR</li>
                   <li>Average Return: 9.10%</li>
                   <li>Expense Ratio: 0.07%</li>
-                  <li>Description: The Vanguard Small-Cap Value ETF seeks to invest in small-cap companies (companies with a market cap under $2 billion) that are belived to be currently <em>undervalued</em> by the market. A few examples of companies found in this ETF include Valspar Corp (VAL), JetBlue Airways Corp (JBLU), and Primerica (PRI).</li>
+                  <li>Description: The Vanguard Small-Cap Value ETF seeks to invest in small-cap companies (companies with a market cap under $2 billion) that are belived to be currently <em>undervalued</em> by the market. A few examples of companies found in this ETF include Valvoline Inc (VVV), JetBlue Airways Corp (JBLU), and Primerica (PRI).</li>
                 </ul>
                 <ul>
                   <h5><a href="https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf" target="_blank" rel="noopener noreferrer">iShares Core S&P 500 ETF</a></h5>
