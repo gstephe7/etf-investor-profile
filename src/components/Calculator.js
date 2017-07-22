@@ -69,7 +69,7 @@ export default class Calculator extends Component {
               <br/>
               <br/>
             </form>
-            <a href="#profile" style={style}><button onClick={this.calculator}>Calculate Profile</button></a>
+            <a href="#profile" style={style}><button className="btn btn-primary" onClick={this.calculator}>Calculate Profile</button></a>
             <Error />
           </div>
         </div>
