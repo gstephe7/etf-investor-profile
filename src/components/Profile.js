@@ -185,8 +185,8 @@ export default class Profile extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <Welcome />
-                <h3 className="hidden-xs">Find Your ETF Investor Profile</h3>
-                <h3 className="visible-xs text-center">Find Your ETF Investor Profile</h3>
+                <h1 className="hidden-xs">Find Your ETF Investor Profile</h1>
+                <h1 className="visible-xs text-center">Find Your ETF Investor Profile</h1>
                 <Calculator
                   years={this.state.years}
                   principle={this.state.principle}
