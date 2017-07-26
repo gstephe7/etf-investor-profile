@@ -15,6 +15,7 @@ html, body, .container {
 
 .hori-ads{
   overflow: hidden;
+  height: 125px;
 }
 
 .ally-ad {
